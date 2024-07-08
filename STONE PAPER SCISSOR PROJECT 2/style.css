@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background: rgb(249, 249, 231);
+}
+
+.container {
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+#rock {
+    height: 17vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgb(225, 110, 129);
+    transition: 0.5s ease;
+}
+
+#rock:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+#paper {
+    height: 17vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgb(212, 107, 212);
+    transition: 0.5s ease;
+}
+
+#paper:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+#scissor {
+    height: 17vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgb(118, 118, 214);
+    transition: 0.5s ease;
+}
+
+#scissor:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.score-board {
+    width: 60rem;
+    margin-left: 18.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    gap: 4rem;
+}
+
+.score-board p {
+    font-size: 35px;
+    padding: 0.4rem 0;
+    font-weight: 700;
+    color: rgb(142, 20, 20);
+}
+
+.msg-container {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: solid;
+    background-color: rgb(3, 3, 3);
+    width: 20rem;
+    margin-left: 38%;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem black;
+}
+
+.msg-container p {
+    font-size: 26px;
+}
